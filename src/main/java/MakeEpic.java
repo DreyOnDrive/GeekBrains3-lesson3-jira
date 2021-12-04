@@ -177,16 +177,18 @@ public class MakeEpic {
         } catch (Exception e) {
             System.out.println(ANSI_RED + "Подтверждение удаления тикета - провал" + ANSI_RED);
             makeEpicSuccess = false;
+        }
 
             driver.quit();
 
-            if (makeEpicSuccess) {
-                System.out.println();
-                System.out.println(ANSI_GREEN + "Тест-кейс выполнен успешно" + ANSI_GREEN);
-            } else {
-                System.out.println();
-                System.out.println(ANSI_RED + "Тест-кейс провален" + ANSI_RED);
-            }
+
+        if (makeEpicSuccess) {
+            System.out.println();
+            System.out.println(ANSI_GREEN + "Тест-кейс выполнен успешно" + ANSI_GREEN);
+        } else {
+            System.out.println();
+            System.out.println(ANSI_RED + "Тест-кейс провален" + ANSI_RED);
         }
     }
 }
+
